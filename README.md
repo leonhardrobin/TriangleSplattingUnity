@@ -46,7 +46,7 @@
 ## To-Do
 
 - [ ] Runtime `.off` file loader via UI  
-- [ ] Support for animated splats  
+- [ ] Support for mesh Export  
 
 ## License
 
