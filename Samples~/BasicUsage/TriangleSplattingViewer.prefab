@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2320117892398310909
+--- !u!1 &941420988883838800
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5067127360000646183}
-  - component: {fileID: 121607769846466137}
+  - component: {fileID: 8995123222306876217}
+  - component: {fileID: 1271575269688476091}
   m_Layer: 0
-  m_Name: TriangleSplatRenderer
+  m_Name: TriangleSplattingViewer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5067127360000646183
+--- !u!4 &8995123222306876217
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2320117892398310909}
+  m_GameObject: {fileID: 941420988883838800}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.4330487, y: 5.29, z: -10.47}
+  m_LocalPosition: {x: 5.9827538, y: -3.6027236, z: -1.8347367}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &121607769846466137
+--- !u!114 &1271575269688476091
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2320117892398310909}
+  m_GameObject: {fileID: 941420988883838800}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bb2cbe6a9af857448498ac0e5d0a67e, type: 3}
+  m_Script: {fileID: 11500000, guid: 84fae56a2a318964686687a594726a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coffFilePath: 
-  triangleMaterial: {fileID: 2100000, guid: 6863fbb3b2004ad42b26a579e7692c25, type: 2}
+  coffFilePath: Assets/Models/your_model.off
+  triangleMaterial: {fileID: 2100000, guid: f98476c073bc76f4396f701020eb6a1e, type: 2}
   chunkSize: 5
   maxTrianglesPerChunk: 10000
   cullingDistance: 50
   updateInterval: 0.5
   GenerateColliders: 0
+  InitRotation: {x: 151, y: 0, z: 0}

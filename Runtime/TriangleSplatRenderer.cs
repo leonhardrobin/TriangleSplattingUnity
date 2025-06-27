@@ -6,11 +6,11 @@ using UnityEngine;
 
 public class TriangleSplatRenderer : MonoBehaviour
 {
-    [Header("Fichier COFF")]
+    [Header("OFF File")]
     public string coffFilePath = "Assets/Models/your_model.off";
     public Material triangleMaterial;
 
-    [Header("Paramètres de chunking")]
+    [Header("Chunking")]
     public float chunkSize = 5f;
     public int maxTrianglesPerChunk = 10000;
 
@@ -33,14 +33,14 @@ public class TriangleSplatRenderer : MonoBehaviour
     {
         if (!File.Exists(coffFilePath))
         {
-            Debug.LogError("Fichier COFF introuvable : " + coffFilePath);
+            Debug.LogError("OFF File Not Found : " + coffFilePath);
             yield break;
         }
 
         string[] lines = File.ReadAllLines(coffFilePath);
         if (!lines[0].Trim().StartsWith("COFF"))
         {
-            Debug.LogError("Format COFF invalide.");
+            Debug.LogError("COFF Invalid");
             yield break;
         }
 
@@ -133,7 +133,7 @@ public class TriangleSplatRenderer : MonoBehaviour
                 chunk.AddComponent<MeshCollider>();
         }
 
-        Debug.Log($"Chargement terminé : {chunks.Count} chunks créés.");
+        Debug.Log($"Loading ended : {chunks.Count} chunks created.");
         this.transform.localEulerAngles = InitRotation;
     }
 

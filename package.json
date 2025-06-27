@@ -1,0 +1,21 @@
+{
+    "name": "com.killian.trianglesplattingunity",
+    "version": "1.0.0",
+    "displayName": "Unity Triangle Splatting",
+    "description": "A lightweight Unity package for visualizing triangle splats in real time. Includes chunked loading, frustum culling, vertex color rendering, and optional mesh collider generation.",
+    "unity": "2022.3",
+"samples": [
+  {
+    "displayName": "Basic Usage",
+    "description": "Example scene demonstrating triangle splat loading and rendering.",
+    "path": "Samples~/BasicUsage"
+  }
+],
+
+    "author": {
+        "name": "KillianCartelier",
+        "email": "",
+        "url": ""
+    },
+    "license": "MIT"
+}
