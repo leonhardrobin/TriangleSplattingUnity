@@ -22,9 +22,9 @@
 
 ### Option 1: Clone the repository
 
-1. Clone this repository:  
-   `git clone https://github.com/KillianCartelier/UnityTriangleSplatting.git`  
-2. Open your Unity project.  
+1. Clone this repository via UPM:  
+   `Install package from GIT url -> https://github.com/KillianCartelier/UnityTriangleSplatting.git`  
+2. Install Samples. 
 
 ### Option 2: Import the Unity package
 
@@ -33,10 +33,10 @@
 3. Select the downloaded `.unitypackage` file and import all assets.
 
 ## Usage
-
-1. Drag and drop the TriangleSplatRenderer prefab in your scene.
-2. Set the path to your `.off` file.  
-4. Press Play to visualize the triangle splats in the scene.
+1. Set your Unity Project in Gamma Color. (Thanks BarnabasTakacs for letting me know about this issue)
+2. Drag and drop the TriangleSplatRenderer prefab in your scene.
+3. Set the path to your `.off` file.  
+5. Press Play to visualize the triangle splats in the scene.
 
 ## Requirements
 
